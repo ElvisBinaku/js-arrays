@@ -27,9 +27,19 @@ console.log(`i nuovi insegnati sono ${teachers}`)
 
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
-const isFabioPresent = null;
+const isFabioPresent = teachers.indexOf("Fabio");
+if (isFabioPresent > 0) {
+  console.log("Si")
+} else { 
+  console.log("No")
+}
+
+const fabioPresente = teachers.indexOf("Fabio") > 0;
+console.log(fabioPresente)
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 const teachersString = teachers.join(", ");
 console.log(teachersString)
 
+const teachersStringSecond = `${teachers}`;
+console.log(teachersString)
