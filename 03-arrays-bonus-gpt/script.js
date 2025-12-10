@@ -13,7 +13,24 @@
   3. Ordina alfabeticamente.
   4. Unisci tutto in una stringa separata da " | ".
 */
-const courses = ["HTML", "CSS", "JavaScript", "React", "PHP", "Node"];
+const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PHP', 'Node']
+console.log(courses)
+
+// nuovo array contenente solo i corsi con più di 3 lettere.
+const threeWords = courses.filter(elements => elements.length > 3);
+console.log(threeWords);
+
+//tutti i corsi in minuscolo.
+
+
+//Ordina alfabeticamente.
+const orderedCourses = courses.sort();
+console.log(orderedCourses);
+
+//tutto in una stringa separata da " | ".
+const joinedCourses = courses.join(" | ");
+console.log(joinedCourses);
+
 
 // ---------- Esercizio B ----------
 /*
